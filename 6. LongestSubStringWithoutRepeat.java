@@ -1,6 +1,6 @@
 package GitHubProject;
 import java.util.*;
-public class longestSubStringWithoutRepeat {
+public class LongestSubStringWithoutRepeat {
     static void lengthOfLongestSubString(String s){
         List<String> values  = new ArrayList<>();
         int n = s.length();
