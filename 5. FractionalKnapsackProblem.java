@@ -1,6 +1,6 @@
 package GitHubProject;
 import java.util.*;
-public class fractionalKnapsackProblem {
+public class FractionalKnapsackProblem {
     static void codeForSolution(int[][] data , int max_weight){
         int n = data.length;
         float ratio[] = new float[n];
