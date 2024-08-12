@@ -8,33 +8,7 @@ public class WordSolver {
         int m = grid[0].length;
         for(int i = 0 ; i < n ; i++){
             for(int j = 0 ; j < m ; j++){
-                if(i >= size){
-                    boolean flag = true;
-                    int index = 0;
-                    for(int k = i ; k >= i-size ;k-- ){
-                        if(grid[k][j]!=values[index++]){
-                            flag = false;
-                            break;
-                        }
-                    }
-                    if(flag){
-                        System.out.println("Values found in upwards direction at row number : "+(i+1)+" and column number "+(j+1));
-                    }
-                }
-                if(j >= size){
-                    boolean flag = true;
-                    int index = 0;
-                    for(int k = j ; k >= j-size ;k-- ){
-                        if(grid[i][k]!=values[index++]){
-                            flag = false;
-                            break;
-                        }
-                    }
-                    if(flag){
-                        System.out.println("Values found in backwards direction at row number : "+(i+1)+" and column number "+(j+1));
-                    }
-                }
-                if(i<=n-size){
+                if(i<n-size){
                     boolean flag = true;
                     int index = 0;
                     for(int k = i ; k <= i+size ;k++ ){
@@ -47,10 +21,10 @@ public class WordSolver {
                         System.out.println("Values found in downwards direction at row number : "+(i+1)+" and column number "+(j+1));
                     }
                 }
-                if(j <= n-size){
+                if(j < m-size){
                     boolean flag = true;
                     int index = 0;
-                    for(int k = j ; k < j+size ;k++ ){
+                    for(int k = j ; k <= j+size ;k++ ){
                         if(grid[i][k]!=values[index++]){
                             flag = false;
                             break;
@@ -58,6 +32,19 @@ public class WordSolver {
                     }
                     if(flag){
                         System.out.println("Values found in Frontwards direction at row number : "+(i+1)+" and column number "+(j+1));
+                    }
+                }
+                if(i<n-size && j < m-size){
+                    boolean flag = true;
+                    int index = 0;
+                    for(int k1 = i , k2 = j ; k1<=i+size &&  k2<= j+size ;k1++,k2++ ){
+                        if(grid[k1][k2]!=values[index++]){
+                            flag = false;
+                            break;
+                        }
+                    }
+                    if(flag){
+                        System.out.println("Values found in Diagonal direction at row number : "+(i+1)+" and column number "+(j+1));
                     }
                 }
             }
