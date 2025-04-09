@@ -17,7 +17,7 @@ Welcome to my Java Algorithms repository! This repository showcases my expertise
   - String Manipulation: Includes problems such as Check Anagram and String Containing All Characters.
 
 **Technologies Used**
-J  - ava: All solutions are implemented using Java (version 8 and above).
+  - Java: All solutions are implemented using Java (version 8 and above).
 
 **Key Projects**
   - Binary Search in Sorted 2D Array: Efficiently searching for an element in a 2D array.
@@ -28,9 +28,9 @@ J  - ava: All solutions are implemented using Java (version 8 and above).
 
 **How to Run**
   1. Clone the repository:
-    ```Bash []
-    git clone https://github.com/Mridul-lucifer/JAVA.git
-    ```
+      ```Bash []
+        git clone https://github.com/Mridul-lucifer/JAVA.git
+      ```
 
   2. Open the Java files in your preferred IDE or text editor (e.g., IntelliJ IDEA, Eclipse, Visual Studio Code).
   3. Run the individual Java files containing the main method for each algorithm or problem solution.
